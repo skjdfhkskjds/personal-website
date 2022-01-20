@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="landingPage">
+        <div>
+            <h1 class="title" id="openingLine">> Hello, my name is Colin.</h1>
+            <a href="#about"class="explore">Explore</a>    
+            
+            <script>
+                var mediaSize = window.matchMedia("(max-width: 425px)")
+                if (mediaSize.matches) {
+                    document.getElementById("openingLine").innerHTML = "> Hi, I'm Colin.";
+                }
+            </script>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Meet Colin</h2>
+            <p class="text">I'm a first year student at the University of Waterloo pursuing a Bachelors in Computer Science degree. I love playing games, solving puzzles, and rock climbing. Nice to meet you!</p>
+            <a href="#projects" class="button">See my work</a>
+        </div>
+        <div class="imageBox">
+            <img src="images/ColinChuYearbookPhoto.jpg" class="profile">
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+
+        <div class="project-cards">
+            <div class="card" style="background-image: url(images/lungCT.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">Covid-19 Detection</h2>
+                    <p class="card-body">Leveraged a <strong>CNN</strong> and the pre-trained <strong>MobileNetV2</strong> model to analyze and detect Covid-19 cases from CT scans of lungs with an accuracy of 85%.</p>
+                    <a href="https://github.com/skjdfhkskjds/machine-learning-projects/tree/main/covid-19-ct-scan-classifier" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>        
+
+            <div class="card" style="background-image: url(images/basilisk.png);">
+                <div class="card-content">
+                    <h2 class="card-title">Roko's Basilisk NFT</h2>
+                    <p class="card-body">8,888 <strong>ERC721</strong> tokens developed in <strong>Solidity</strong>. Implemented with a <strong>proxy contract</strong> for upgradeablility in future implementations.</p>
+                    <a href="#" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/bot.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">Discord Stocks Bot</h2>
+                    <p class="card-body">A discord bot written in <strong>Python</strong> accessing the <strong>YFinance API</strong> to monitor stock prices and maintain a username unique portfolio in a <strong>MySQL</strong> database.</p>
+                    <a href="https://github.com/skjdfhkskjds/discord-bots/tree/main/stock-portfolio-bot" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/blockChain.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">Blockchain</h2>
+                    <p class="card-body">A miniature blockchain written in <strong>Javascript</strong> complete with <strong>transactional</strong> and security functionalities, including <strong>mining</strong> possibilities.</p>
+                    <a href="https://github.com/skjdfhkskjds/basic-blockchain" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/chessBoard.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">Chess Engine</h2>
+                    <p class="card-body">A chess engine written in <strong>Java</strong> made with the <strong>Alpha-Beta pruning</strong> and <strong>Minimax</strong> algorithm on a custom developed chess interface.</p>
+                    <a href="https://github.com/skjdfhkskjds/Java-Chess" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/stopSign.png);">
+                <div class="card-content">
+                    <h2 class="card-title">Traffic Sign Classifier</h2>
+                    <p class="card-body">A computer vision model made with a <strong>convolutional neural network</strong> in <strong>Tensorflow</strong> and <strong>Scikit-learn</strong> to recognize any of 47 different traffic signs.</p>
+                    <a href="https://github.com/skjdfhkskjds/machine-learning-projects/tree/main/traffic_sign_classifier" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>    
+
+            <div class="card" style="background-image: url(images/trivia.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">Trivia Discord Bot</h2>
+                    <p class="card-body">Leveraged the <strong>Discord</strong> and <strong>Trivia APIs</strong> in <strong>Python</strong> to develop a bot to ask trivia questions with a user score saving functionality.</p>
+                    <a href="#" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/catanddog.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">Cats or Dogs</h2>
+                    <p class="card-body">Developed a cat versus dog picture classifier with a <strong>CNN</strong> in Tensorflow. The model succeeded on testing data with an accuracy of 96%.</p>
+                    <a href="https://github.com/skjdfhkskjds/machine-learning-projects/tree/main/cat_vs_dog_classifier" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/phoneDiscord.jpeg);">
+                <div class="card-content">
+                    <h2 class="card-title">The Rock Bot</h2>
+                    <p class="card-body">A discord bot written in <strong>Python</strong> which prints a picture of The Rock in response to the keyword "rock" and calculates points per invocation.</p>
+                    <a href="https://github.com/skjdfhkskjds/discord-bots/tree/main/the-rock-bot" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/healthCosts.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">Costs Predictor</h2>
+                    <p class="card-body">Used a <strong>linear regression</strong> model to predict the cost of health care based on a variety of input features with a mean absolute error of 2200$.</p>
+                    <a href="https://github.com/skjdfhkskjds/machine-learning-projects/blob/main/health_costs_regression.py" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/heartFailure.jpg);">
+                <div class="card-content">
+                    <h2 class="card-title">Heart Failure Model</h2>
+                    <p class="card-body">Implemented a <strong>NN</strong> to detect heart disease in patients based on basic input features and <strong>K-means</strong> clusters with an accuracy of 85%.</p>
+                    <a href="https://github.com/skjdfhkskjds/machine-learning-projects/tree/main/heart-failure-detection" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url(images/ballSim.png);">
+                <div class="card-content">
+                    <h2 class="card-title">Ball Simulation</h2>
+                    <p class="card-body">Developed a bouncing ball simulation in <strong>Java</strong> by applying real-world physics. Resulted in a full-score on a research paper investigating it.</p>
+                    <a href="https://github.com/skjdfhkskjds/bouncing-ball-simulation" class="card-button" target="_blank"><strong>Learn More</strong></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer" id="contact">
+        <ul class="socialMedia">
+            <li><a href="https://www.facebook.com/colin.chuu/" target="_blank"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/colin-chu/" target="_blank"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://www.instagram.com/colin.chuu/" target="_blank"><img src="images/instagram.png"></a></li>
+        </ul>
+        <h4 class="copyrightText">Copyright ©2022 | <a href="https://github.com/skjdfhkskjds/personal-website" class="copyrightText" target="_blank">Check out the source code for this site.</a></h4>
+    </section>
+</body>
+</html>
